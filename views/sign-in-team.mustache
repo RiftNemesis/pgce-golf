@@ -1,0 +1,36 @@
+<html>
+<head>
+  <!-- Required meta tags -->
+  {{> meta}}
+  <link rel="stylesheet" href="/styles/login.css">
+  <title>Team Login</title>
+</head>
+  <body>
+    <!-- navbar partial -->
+    {{> menu}}
+    <div class="loginCard">
+      <div id="cardSize" class="card text-center">
+        <img src="/images/golf1edit.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Team Login</h2>
+          <div class="card-text">
+            <form class="login" action="/team-sign-in" method="POST">
+              <div class="form-group">
+                <input type="text" name="week" class="form-control" placeholder="Enter Week #" />
+              </div>
+              <div class="form-group">
+                <input type="text" name="teamNumber" class="form-control" placeholder="Enter Team #" />
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Enter Password" />
+              </div>
+              <button id="button" type="submit" class="btn btn-link">Login &raquo;</button>
+            </form>
+            <p>{{message}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{> script}}
+  </body>
+</html>

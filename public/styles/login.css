@@ -1,0 +1,36 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 3rem;
+  background-image: url("/images/diamond.jpg");
+}
+
+.menu {
+  margin-bottom: 1.5rem;
+}
+
+.loginCard {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.loginCard #cardSize {
+  width: 30rem;
+}
+
+.loginCard #button {
+  background-color: #00240a;
+  color: white;
+}
+
+.card-title {
+  color: #00240a;
+}
+
+.login {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}

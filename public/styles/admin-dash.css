@@ -1,0 +1,29 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 3rem;
+  background-image: url("/images/diamond.jpg");
+}
+
+.menu {
+  margin-bottom: 1.5rem;
+}
+
+.dashCard {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dashCard #cardSize {
+  width: 30rem;
+}
+
+.dashCard #button {
+  background-color: #00240a;
+  color: white;
+}
+
+.card-title {
+  color: #00240a;
+}

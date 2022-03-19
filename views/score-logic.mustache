@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- This for testing purposes.-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Score Logic</title>
+  </head>
+  <body>
+
+    {{> menu}}
+
+    <h2>Score Logic</h2>
+
+    <form action="/input-score-logic" method="POST">
+      <h3>Team Number {{t1P1.teamNumber}}</h3>
+      <p>{{t1P1.name}} : </p>
+      No show? <input type="checkbox" name="onePlayed" value="false"/>
+      <p>
+        <input type="text" name="score1" placeholder="Enter Score" />
+      </p>
+      <p>{{t1P2.name}} : </p>
+      No show? <input type="checkbox" name="twoPlayed" value="false"/>
+      <p>
+        <input type="text" name="score2" placeholder="Enter Score" />
+      </p>
+
+      <h3>Team Number {{t2P2.teamNumber}}</h3>
+
+      <p>{{t2P1.name}} :  </p>
+      No show? <input type="checkbox" name="threePlayed" value="false"/>
+      <p>
+        <input type="text" name="score3" placeholder="Enter Score" />
+      </p>
+      <p>{{t2P2.name}} : </p>
+      No show? <input type="checkbox" name="fourPlayed" value="false"/>
+      <p>
+        <input type="text" name="score4" placeholder="Enter Score" />
+      </p>
+      <p>
+        <button type="submit">Submit Scores</button>
+      </p>
+    </form>
+
+    {{#scores}}
+    {{/scores}}
+
+
+  </body>
+</html>

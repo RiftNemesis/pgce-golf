@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {{> meta}}
+    <link rel="stylesheet" href="/styles/leaderboard.css">
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    {{> menu}}
+    <div id="leaderboardBody">
+      <div>
+        <table class="table table-striped table-light">
+          <caption><h2 id="title">Leaderboard</h2></caption>
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Team Number</th>
+                <th scope="col">Points</th>
+                <th scope="col">Player One</th>
+                <th scope="col">Player Two</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#teams}}
+              <tr>
+                <th scope="row">{{rank}}</th>
+                <td>{{team}}</td>
+                <td>{{points}}</td>
+                <td>{{player_one}}</td>
+                <td>{{player_two}}</td>
+              </tr>
+              {{/teams}}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {{> script}}
+  </body>
+</html>

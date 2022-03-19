@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    {{> menu}}
+
+    <h2>Next Week's Matches</h2>
+    <div>
+    {{#ABPlayers}}
+    
+    <div>
+    {{teamNumber}}
+    {{APlayer}}
+    {{APlayerQuota}}
+
+    </div>
+    <div>
+    {{BPlayer}}
+    {{BPlayerQuota}}
+    </div>
+
+
+    {{/ABPlayers}}
+
+
+    </div>
+
+  </body>
+</html>

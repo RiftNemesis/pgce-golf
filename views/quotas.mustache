@@ -1,0 +1,56 @@
+<html>
+<head></head>
+
+<body>
+
+  {{> menu}}
+
+  <form action='/getquotas' method="POST">
+    <input type="text" name="golfer" placeholder="title" />
+    <input type="text" name=""></textarea>
+    <button type="submit">Save</button>
+  </form>
+
+<ul>
+Test of quota recovery
+{{#quotas}}
+
+
+<li>
+  <div>
+  {{golfer}}
+  </div>
+  <p>
+  {{q1}}
+  {{q2}}
+  {{q3}}
+  {{q4}}
+  {{q5}}
+  {{q6}}
+  {{q7}}
+  {{q8}}
+  {{q9}}
+  {{q10}}
+  {{q11}}
+
+
+
+</li>
+
+{{/quotas}}
+
+{{#thisweek}}
+<li>
+{{name}}
+{{quota}}
+{{newbie}}
+{{/thisweek}}
+</li>
+
+
+</ul>
+
+
+</body>
+
+</html>
